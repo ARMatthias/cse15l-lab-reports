@@ -27,7 +27,7 @@ Download and insteall Git by visiting the [Git for Windows site](https://gitforw
 ![image](https://user-images.githubusercontent.com/122485183/212784459-56311996-9df3-4f71-a2c1-c7f028c91a97.png)
 
 
-Once download is complete, open the Git executible and complete the wizard's setup steps to finalize installation (default settings also work fine).
+Once download is complete, open the Git executible and complete the wizard's setup steps to finalize installation (default settings also work fine for this).
 
 
 ## Remote Connection
@@ -37,7 +37,7 @@ First, open Visual Studio Code, and you may be greeted by an interface like this
 ![image](https://user-images.githubusercontent.com/122485183/212784474-0572b227-9c3f-471b-8945-d626a3c8d4cf.png)
 
 
-Open a terminal using the keyboard shortcut by pressing **Control** and **` (backtick)**.
+Open a terminal using the keyboard shortcut by pressing **Control** and **` (backtick)** simultaneously.
 
 ![image](https://user-images.githubusercontent.com/122485183/212784509-cbf5c774-0d67-4649-a165-de1b4b0801af.png)
 
