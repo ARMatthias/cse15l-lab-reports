@@ -56,7 +56,7 @@ The new gitbash terminal should open awaiting a command.
 Type into the terminal
 
 ```
-ssh cs15lwi23ZZZ@ieng6.ucsd.edu
+ssh cs15lwi23ZZZ@ieng6.ucsd.edu 
 ```
 
 Where the "**ZZZ**" are to be replaced with your unique letter combination to your CS15 student account. (Seen below in the next step, my unique letters are "**aao**") 
