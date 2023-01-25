@@ -104,9 +104,9 @@ where **.. (two periods)** moves into the parent directiory, and the **~ (tilde)
 ![image](https://user-images.githubusercontent.com/122485183/212789454-1d3b3576-8f0c-4d0e-bcd0-5b5f81beb3a7.png)
 
 or an absolute path like:
-```
+      ```
      cd /home/linux/ieng6/cs15lwi23/cs15lwi23aao
-```
+      ```
 
 * **pwd** : **P**rint **w**orking **d**irectory, prints the absolute path of the current directory:
 
