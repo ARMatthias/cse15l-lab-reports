@@ -105,7 +105,7 @@ where **.. (two periods)** moves into the parent directiory, and the **~ (tilde)
 
 or an absolute path like:
 
-      * `cd /home/linux/ieng6/cs15lwi23/cs15lwi23aao`
+    * `cd /home/linux/ieng6/cs15lwi23/cs15lwi23aao`
 
 * **pwd** : **P**rint **w**orking **d**irectory, prints the absolute path of the current directory:
 
