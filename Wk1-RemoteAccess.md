@@ -55,7 +55,7 @@ The new gitbash terminal should open awaiting a command.
 
 Type into the terminal
 
-> ssh cs15lwi23**ZZZ**@ieng6.ucsd.edu
+'ssh cs15lwi23**ZZZ**@ieng6.ucsd.edu'
 
 Where the "**ZZZ**" are to be replaced with your unique letter combination to your CS15 student account. (Seen below in the next step, my unique letters are "**aao**") 
 the command **ssh** stands for **S**ecure **Sh**ell, which is a safe protocol by which a user of an unsecure network may access a different computer. 
@@ -91,13 +91,9 @@ Now that you are successfully remotely connected to another computer in the netw
 Useful commands are as follows:
 * **cd** : **c**hange **d**irectory. In order to navigate between folders and directories, prefix the desired folder like: 
 
-> cd cs15lwi23aao
-
-> cd ..
-
-or
-
-> cd ~
+    * `cd cs15lwi23aao`
+    * `cd ..`
+    * `cd ~`
 
 where **.. (two periods)** moves into the parent directiory, and the **~ (tilde)** returns to the home directory.
 
@@ -109,7 +105,7 @@ where **.. (two periods)** moves into the parent directiory, and the **~ (tilde)
 
 or an absolute path like:
 
-> cd /home/linux/ieng6/cs15lwi23/cs15lwi23aao
+    * `cd /home/linux/ieng6/cs15lwi23/cs15lwi23aao`
 
 * **pwd** : **P**rint **w**orking **d**irectory, prints the absolute path of the current directory:
 
@@ -125,7 +121,7 @@ or an absolute path like:
 
 In order to log out of remote access, use the terminal command:
 
-> exit
+`exit`
 
 And a successful log-out should come with a confirmation message prinnted to terminal, and a return to a default terminal:
 
