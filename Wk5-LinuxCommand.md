@@ -1,9 +1,9 @@
 # Lab Report 3: grep 
-`grep` searches a given file, files, or directory by searching line-by-line for mathces to a specified string of content or pattern. It is a useful command for finding and processing files as its abilities range anywhere between counting the files relevant to the search and the occurrences which the pattern/content is found, all the way to returning every instance within a given number of lines of context and concatenated in an automatic compilation.
+`grep` searches a given file, files, or directory by searching line-by-line for matches to a specified string of content or pattern. It is a useful command for finding and processing files as its abilities range anywhere between counting the files relevant to the search and the occurrences which the pattern/content is found, all the way to returning every instance within a given number of lines of context and concatenated in an automatic compilation.
 The following write-up will demonstrate four options that can be used to specify `grep` function, including examples using [written_2/](https://github.com/ucsd-cse15l-w23/skill-demo1-data) as an example collection of files.
 
 ### -v (--invert-match): 
-`-v` is a grep search modifieer that will invert the results of the search; where in a normal search, only lines found with content that matches the input pattern/content would be returned, `-v` will return every line within the specified file(s)/directory that *doesn't*.
+`-v` is a grep search modifier that will invert the results of the search; where in a normal search, only lines found with content that matches the input pattern/content would be returned, `-v` will return every line within the specified file(s)/directory that *doesn't*.
 This function could be useful in, for example, trimming a series of chapters together without their references in order to create a seamless compilation (presumably to also concatenate the references and their respective chapters to the end).
 Using written_2/non-fiction/OUP/Castro , each of the 26 chapters can be stripped of their references and compiled together with:
 ```
@@ -55,7 +55,7 @@ and
 ```
 wc newCh6.txt
 ```
-which returens
+which returns
 ```
    91  6859 42923 newCh6.txt
 ```
@@ -89,7 +89,7 @@ Which results in
 ```
 grep 'tan' written_2/travel_guides/*/*.txt
 ```
-Results in unwanted inclusions to the search results, as demonstrated by the inclusion of "outst*tan*ding" and "bands*tan*d" when the human intention of the search was just "tan" as in _suntan_.
+Results in unwanted inclusions to the search results, as demonstrated by the inclusion of "outs*tan*ding" and "bands*tan*d" when the human intention of the search was just "tan" as in _suntan_.
 Instead, a narrower search:
 ```
 grep -w 'tan' written_2/travel_guides/*/*.txt
