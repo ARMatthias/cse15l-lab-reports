@@ -14,7 +14,7 @@ And, in order to demonstrate the inverse results, we can further compile and con
 ```
 grep -e 'References' -e 'See also' written_2/non-fiction/OUP/Castro/*.txt >> CastroFull.txt
 ```
-Where `>> CastroFull.txt` appends the output of this search to the end of the exisitng text file CastroFull.txt.
+Where `>> CastroFull.txt` appends the output of this search to the end of the existing text file CastroFull.txt.
 And now we can prove this compilation of the references-trimmed chapter using:
 ```
 grep -m 5 -n -e 'References' -e 'See also' CastroFull.txt
@@ -59,12 +59,12 @@ which returns
 ```
    91  6859 42923 newCh6.txt
 ```
-And therefore indicates that all lines including '?' were ommitted when ch6.txt was being rewritten line by line into newCh6.txt, and only the 91 (out of a previous 124) lines remain.
+And therefore indicates that all lines including '?' were omitted when ch6.txt was being rewritten line by line into newCh6.txt, and only the 91 (out of a previous 124) lines remain.
 
 
 
 ### -w (--word regexp): 
-`-w` is another helpful search modifier that only returns results that form what is recognized as a whole word. This means that either the found instance must be preceeded and succeeded by either an end of the line or by a character that is not a letter, number, or underscore.
+`-w` is another helpful search modifier that only returns results that form what is recognized as a whole word. This means that either the found instance must be preceded and succeeded by either an end of the line or by a character that is not a letter, number, or underscore.
 This can be used to search for number of instances of specific word (and not any of its variants, such as varying prefixes/suffiixes/tenses/etc) within a directory.
 To demonstrate, we can search to count the number of instances of the word "food" within the written/travel-guides/ directory:
 ```
@@ -75,7 +75,7 @@ The results look like:
 ```
 199   10310   74437
 ```
-Meaning that the exact word "food" has occured in written_2/travvel_guides/ 199 times! 
+Meaning that the exact word "food" has occurred in written_2/travvel_guides/ 199 times! 
 This is in comparison with the looser search
 ```
 grep 'food' written_2/travel_guides/*/*.txt | wc
@@ -107,13 +107,13 @@ Which is closer to the intention of the client search.
 
 
 ### -C NUM (--context=NUM):
-`-C NUM` is a grep option by which you can alter the amount of context (as in, the lines immediately surrounding the specific searched content) that is returned in additon to the search resutl itself. NUM is an input integer that specifies the number of lines of context to be included in the returned instance result. 
+`-C NUM` is a grep option by which you can alter the amount of context (as in, the lines immediately surrounding the specific searched content) that is returned in addition to the search result itself. NUM is an input integer that specifies the number of lines of context to be included in the returned instance result. 
  
-As an example, a client could need to search for *articles* that include the topic "garrison", and therefore would need more than just the line in which the word "garrison" would appear. A searcht that could return the target line and 2 additional lines of context surrounding it would look like this:
+As an example, a client could need to search for *articles* that include the topic "garrison", and therefore would need more than just the line in which the word "garrison" would appear. A search that could return the target line and 2 additional lines of context surrounding it would look like this:
 ```
 grep -C 2 'garrisons' written_2/travel_guides/berlitz*/*.txt
 ```
-and so a single result of this search would be a lot more illuminaating:
+and so a single result of this search would be a lot more illuminating:
 ```
 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt-        The Stewart Dynasty
 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt-        During these stormy years, the castle of Edinburgh was
@@ -121,12 +121,12 @@ written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:        occupied several t
 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt-        the English by William of Douglas. The young David II returned from
 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt-        exile in France and made it his principal royal residence, building a
 ```
-instead of the same search result without the exmpanded context, which looks like this
+instead of the same search result without the expanded context, which looks like this
 ```
 written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:        occupied several times by English garrisons. In 1341 it was taken from
 ```
 
-Similarly, a client could be searching for an article-length exerpt including the topic 'soccer'. 
+Similarly, a client could be searching for an article-length excerpt including the topic 'soccer'. 
 A search for this with a context of 4 could look like this:
 ```
 grep -C 5 'soccer' written_2/travel_guides/berlitz*/*.txt
@@ -155,7 +155,7 @@ written_2/travel_guides/berlitz2/Poland-WhatToDo.txt-Another fast-paced sport is
 `-c` is able to condense necessary commands in the way of counting the number of matching instances there are in a given file(s)/directory.
 
 If given a directory, `-c` will return the number of matching instances per each file (including files within the directory that do not have any matching instances).
-Where, as an example, searcing written_2/travel_guides/ for "snow":
+Where, as an example, searching written_2/travel_guides/ for "snow":
 ```
 grep -c 'snow' written_2/travel_guides/berlitz*/*.txt | grep -v "0" 
 ```
